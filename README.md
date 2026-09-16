@@ -110,23 +110,6 @@ file per shot count.
 
 ## Main arguments
 
-| Argument | Default | Description |
-| --- | --- | --- |
-| `--mode` | `pretrain` | `pretrain`, `downstream-only`, or `few-shot` |
-| `--dataset` | `all` | All datasets, one dataset, or a comma-separated subset |
-| `--data-path` | `datasets` | Dataset root directory |
-| `--epochs` | `3` | Number of self-supervised pretraining epochs |
-| `--batch-size` | `32` | Batch size |
-| `--learning-rate` | `0.0001` | AdamW learning rate |
-| `--loss-lambda` | `0.5` | Weight of the pointwise loss |
-| `--seed` | `42` | Random seed |
-| `--device` | Automatic | `cuda:0` when CUDA is available, otherwise `cpu` |
-| `--checkpoint-root` | `result/checkpoints` | Checkpoint root directory |
-| `--output-path` | `result` | Standard result and log output directory |
-| `--result-filename` | `result.csv` | Result filename; experiment settings are not appended |
-| `--few-shot-output-path` | `result/fewshot` | Few-shot output directory |
-| `--resume` | Disabled | Resume an interrupted run and preserve completed results |
-
 View all arguments with:
 
 ```bash
